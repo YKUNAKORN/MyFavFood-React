@@ -1,10 +1,9 @@
 import React from 'react';
-import '../styles/cash-control.css';
+import '../styles/inventory.css';
 
-const CashControl: React.FC = () => {
+const Inventory: React.FC = () => {
     return (
         <div className="main-content">
-            {/* Main content */}
             {/* Left sidebar */}
             <div className="l-sidebar">
                 <a href="../pages/overview.html">
@@ -15,8 +14,8 @@ const CashControl: React.FC = () => {
                     <a href="../pages/ring-sales.html"><i className="bi bi-graph-up"></i> Ring Sales</a>
                     <a href="../pages/finished-waste.html"><i className="bi bi-trash"></i> Finished Waste</a>
                     <a href="../pages/employees.html"><i className="bi bi-people"></i> Employees</a>
-                    <a href="../pages/cash-control.html" className="active"><i className="bi bi-cash"></i> Cash Control</a>
-                    <a href="../pages/inventory.html"><i className="bi bi-box-seam"></i> Inventory</a>
+                    <a href="../pages/cash-control.html"><i className="bi bi-cash"></i> Cash Control</a>
+                    <a href="../pages/inventory.html" className="active"><i className="bi bi-box-seam"></i> Inventory</a>
                 </nav>
                 <a href="../index.html" className="signout"><i className="bi bi-box-arrow-right"></i> Sign Out</a>
             </div>{/* Left sidebar end */}
@@ -26,8 +25,8 @@ const CashControl: React.FC = () => {
                 <header>
                     <div className="nav-current">
                         <p className="nav">Login</p>
-                        <p className="nav">&gt;</p>
-                        <p className="nav-active">Cash control</p>
+                        <p className="nav">{'>'}</p>
+                        <p className="nav-active">Inventory</p>
                     </div>
                     <div className="user-info">
                         Guest01
@@ -39,7 +38,7 @@ const CashControl: React.FC = () => {
                     {/* section 1 */}
                     <div className="section1">
                         <div className="sub-container1">
-                            <h2>Cash control</h2>
+                            <h2>Inventory</h2>
                             <a href="../pages/overview.html">
                                 <button className="home-btn"><i className="bi bi-house-door"></i>Home</button>
                             </a>
@@ -50,67 +49,67 @@ const CashControl: React.FC = () => {
                         <div className="menu-btn">
                             {/* row1 */}
                             <div className="menu-row1">
-                                <a href="../pages/start-day.html" className="start-day-1 eff">
-                                    <div className="start-day-2">
-                                        <div className="start-day-title">
-                                            <h3>Start Day</h3>
-                                            <p>Start day button</p>
+                                <a href="../pages/delivery.html" className="delivery-1 eff">
+                                    <div className="delivery-2">
+                                        <div className="delivery-title">
+                                            <h3>Delivery</h3>
+                                            <p>Delivery button</p>
                                         </div>
-                                        <i className="bi bi-calendar"></i>
+                                        <i className="bi bi-bag"></i>
                                     </div>
                                 </a>
 
-                                <a href="../pages/end-day.html" className="end-day-1 eff">
-                                    <div className="end-day-2">
-                                        <div className="end-day-title">
-                                            <h3>End Day</h3>
-                                            <p>End day button</p>
+                                <a href="../pages/date-waste.html" className="waste-1 eff">
+                                    <div className="waste-2">
+                                        <div className="waste-title">
+                                            <h3>Waste</h3>
+                                            <p>Waste button</p>
                                         </div>
-                                        <i className="bi bi-calendar-check"></i>
+                                        <i className="bi bi-trash3"></i>
                                     </div>
                                 </a>
                             </div>
                             {/* row2 */}
-                             <div className="menu-row2">
-                                <a href="../pages/cash-in-drawer.html" className="cash-in-drawer-1 eff">
-                                    <div className="cash-in-drawer-2">
-                                        <div className="cash-in-drawer-title">
-                                            <h3>Cash in <br /> Drawer</h3>
-                                            <p>Cash in  drawer button</p>
+                            <div className="menu-row2">
+                                <a href="../pages/date-delivery.html" className="edit-delivery-1 eff">
+                                    <div className="edit-delivery-2">
+                                        <div className="edit-delivery-title">
+                                            <h3>Edit <br /> Delivery</h3>
+                                            <p>Edit delivery button</p>
                                         </div>
-                                        <i className="bi bi-coin"></i>
+                                        <i className="bi bi-cart-plus"></i>
                                     </div>
                                 </a>
 
-                                <a href="../pages/cash-drop.html" className="cash-drop-1 eff">
-                                    <div className="cash-drop-2">
-                                        <div className="cash-drop-title">
-                                            <h3>Cash Drop</h3>
-                                            <p>Cash drop button</p>
+                                <a href="../pages/date-waste.html" className="edit-waste-1 eff">
+                                    <div className="edit-waste-2">
+                                        <div className="edit-waste-title">
+                                            <h3>Edit Waste</h3>
+                                            <p>Edit waste button</p>
                                         </div>
-                                        <i className="bi bi-cash-stack"></i>
+                                        <i className="bi bi-recycle"></i>
                                     </div>
                                 </a>
                             </div>
                             {/* row3 */}
                             <div className="menu-row3">
-                                <a href="../pages/reprint.html" className="reprint-recipt-1 eff">
-                                    <div className="reprint-recipt-2">
-                                        <div className="reprint-recipt-title">
-                                            <h3>Reprint <br /> Recipt</h3>
-                                            <p>Reprint recipt button</p>
+                                <a href="../pages/stock.html" className="stock-1 eff">
+                                    <div className="stock-2">
+                                        <div className="stock-title">
+                                            <h3>Stock</h3>
+                                            <p>Stock button</p>
                                         </div>
-                                        <i className="bi bi-printer"></i>
+                                        <i className="bi bi-list-check"></i>
                                     </div>
                                 </a>
 
-                                <a href="../pages/void.html" className="void-transaction-1 eff">
-                                    <div className="void-transaction-2">
-                                        <div className="void-transaction-title">
-                                            <h3>Void <br /> Transaction</h3>
-                                            <p>Void transaction button</p>
+                                <a href="../pages/new-waste.html" className="new-waste-1 eff">
+                                    <div className="new-waste-2">
+                                        <div className="new-waste-title">
+                                            <h3>New Waste</h3>
+                                            <p>New waste button</p>
                                         </div>
-                                        <i className="bi bi-file-earmark-x"></i>
+                                        <i className="bi bi-plus-circle"></i>
                                     </div>
                                 </a>
                             </div>
@@ -160,9 +159,8 @@ const CashControl: React.FC = () => {
 
             </div>{/* Right sidebar end */}
 
-            {/* Main content end */}
         </div>
     );
 };
 
-export default CashControl;
+export default Inventory;
