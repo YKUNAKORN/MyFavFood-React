@@ -171,7 +171,7 @@ const EditProfile: React.FC = () => {
                         </div>
                         
                         <div className="back-btn">
-                            <a href="../pages/employees.html">Back?</a>
+                            <a href="/employees">Back?</a>
                         </div>
                         
                     </form>

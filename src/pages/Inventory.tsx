@@ -6,18 +6,18 @@ const Inventory: React.FC = () => {
         <div className="main-content">
             {/* Left sidebar */}
             <div className="l-sidebar">
-                <a href="../pages/overview.html">
+                <a href="/overview">
                     <h1 className="logo">MyFavFood</h1>
                 </a>
                 <nav>
-                    <a href="../pages/overview.html"><i className="bi bi-pie-chart"></i> Overview</a>
-                    <a href="../pages/ring-sales.html"><i className="bi bi-graph-up"></i> Ring Sales</a>
-                    <a href="../pages/finished-waste.html"><i className="bi bi-trash"></i> Finished Waste</a>
-                    <a href="../pages/employees.html"><i className="bi bi-people"></i> Employees</a>
-                    <a href="../pages/cash-control.html"><i className="bi bi-cash"></i> Cash Control</a>
-                    <a href="../pages/inventory.html" className="active"><i className="bi bi-box-seam"></i> Inventory</a>
+                    <a href="/overview"><i className="bi bi-pie-chart"></i> Overview</a>
+                    <a href="/ring-sales"><i className="bi bi-graph-up"></i> Ring Sales</a>
+                    <a href="/finished-waste"><i className="bi bi-trash"></i> Finished Waste</a>
+                    <a href="/employees"><i className="bi bi-people"></i> Employees</a>
+                    <a href="/cash-control"><i className="bi bi-cash"></i> Cash Control</a>
+                    <a href="/inventory" className="active"><i className="bi bi-box-seam"></i> Inventory</a>
                 </nav>
-                <a href="../index.html" className="signout"><i className="bi bi-box-arrow-right"></i> Sign Out</a>
+                <a href="/" className="signout"><i className="bi bi-box-arrow-right"></i> Sign Out</a>
             </div>{/* Left sidebar end */}
 
             {/* Right sidebar */}
@@ -39,7 +39,7 @@ const Inventory: React.FC = () => {
                     <div className="section1">
                         <div className="sub-container1">
                             <h2>Inventory</h2>
-                            <a href="../pages/overview.html">
+                            <a href="/overview">
                                 <button className="home-btn"><i className="bi bi-house-door"></i>Home</button>
                             </a>
                         </div>
@@ -49,7 +49,7 @@ const Inventory: React.FC = () => {
                         <div className="menu-btn">
                             {/* row1 */}
                             <div className="menu-row1">
-                                <a href="../pages/delivery.html" className="delivery-1 eff">
+                                <a href="/delivery" className="delivery-1 eff">
                                     <div className="delivery-2">
                                         <div className="delivery-title">
                                             <h3>Delivery</h3>
@@ -59,7 +59,7 @@ const Inventory: React.FC = () => {
                                     </div>
                                 </a>
 
-                                <a href="../pages/date-waste.html" className="waste-1 eff">
+                                <a href="/date-waste" className="waste-1 eff">
                                     <div className="waste-2">
                                         <div className="waste-title">
                                             <h3>Waste</h3>
@@ -71,7 +71,7 @@ const Inventory: React.FC = () => {
                             </div>
                             {/* row2 */}
                             <div className="menu-row2">
-                                <a href="../pages/date-delivery.html" className="edit-delivery-1 eff">
+                                <a href="/date-delivery" className="edit-delivery-1 eff">
                                     <div className="edit-delivery-2">
                                         <div className="edit-delivery-title">
                                             <h3>Edit <br /> Delivery</h3>
@@ -81,7 +81,7 @@ const Inventory: React.FC = () => {
                                     </div>
                                 </a>
 
-                                <a href="../pages/date-waste.html" className="edit-waste-1 eff">
+                                <a href="/date-waste" className="edit-waste-1 eff">
                                     <div className="edit-waste-2">
                                         <div className="edit-waste-title">
                                             <h3>Edit Waste</h3>
@@ -93,7 +93,7 @@ const Inventory: React.FC = () => {
                             </div>
                             {/* row3 */}
                             <div className="menu-row3">
-                                <a href="../pages/stock.html" className="stock-1 eff">
+                                <a href="/stock" className="stock-1 eff">
                                     <div className="stock-2">
                                         <div className="stock-title">
                                             <h3>Stock</h3>
@@ -103,7 +103,7 @@ const Inventory: React.FC = () => {
                                     </div>
                                 </a>
 
-                                <a href="../pages/new-waste.html" className="new-waste-1 eff">
+                                <a href="/new-waste" className="new-waste-1 eff">
                                     <div className="new-waste-2">
                                         <div className="new-waste-title">
                                             <h3>New Waste</h3>
@@ -126,25 +126,25 @@ const Inventory: React.FC = () => {
                         <h3>MORE INFORMATION</h3> <br />
                         <div className="more-information-row">
                             <div className="more-information-column1">
-                                <a href="../pages/overview.html">Overview</a>
-                                <a href="../pages/ring-sales.html">Ring Sales</a>
-                                <a href="../pages/finished-waste.html">Finished Waste</a>
+                                <a href="/overview">Overview</a>
+                                <a href="/ring-sales">Ring Sales</a>
+                                <a href="/finished-waste">Finished Waste</a>
                                 <a href="#">Recall Order</a>
-                                <a href="../pages/employees.html">Employees</a>
+                                <a href="/employees">Employees</a>
                             </div>
                             <div className="more-information-column2">
-                                <a href="../pages/time-punch.html">Time Punch</a>
-                                <a href="../pages/information.html">Information</a>
-                                <a href="../pages/cash-control.html">Cash Control</a>
-                                <a href="../pages/reprint.html">Reprint</a>
-                                <a href="../pages/void.html">Void Transaction</a>
+                                <a href="/time-punch">Time Punch</a>
+                                <a href="/information">Information</a>
+                                <a href="/cash-control">Cash Control</a>
+                                <a href="/reprint">Reprint</a>
+                                <a href="/void">Void Transaction</a>
                             </div>
                             <div className="more-information-column3">
-                                <a href="../pages/inventory.html">Inventory</a>
-                                <a href="../pages/delivery.html">Delivery</a>
-                                <a href="../pages/edit-waste.html">Edit Waste</a>
-                                <a href="../pages/stock.html">Stock</a>
-                                <a href="../pages/waste.html">Waste</a>
+                                <a href="/inventory">Inventory</a>
+                                <a href="/delivery">Delivery</a>
+                                <a href="/edit-waste">Edit Waste</a>
+                                <a href="/stock">Stock</a>
+                                <a href="/waste">Waste</a>
                             </div>
                         </div>
                     </div>
